@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-boilerplate-react-vite",
-  "version": "0.3.5",
-  "description": "chrome extension boilerplate",
+  "name": "twitter-tag",
+  "version": "0.1.0",
+  "description": "TwitterTag",
   "license": "MIT",
   "repository": {
     "type": "git",

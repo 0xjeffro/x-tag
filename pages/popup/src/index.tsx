@@ -1,6 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import '@src/index.css';
+import React from 'react';
 import Popup from '@src/Popup';
+import { NextUIProvider } from '@nextui-org/react';
 
 function init() {
   const appContainer = document.querySelector('#app-container');
@@ -9,7 +11,13 @@ function init() {
   }
   const root = createRoot(appContainer);
 
-  root.render(<Popup />);
+  root.render(
+    <React.StrictMode>
+      <NextUIProvider>
+        <Popup />
+      </NextUIProvider>
+    </React.StrictMode>,
+  );
 }
 
 init();
